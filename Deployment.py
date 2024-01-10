@@ -7,8 +7,8 @@ import category_encoders
 import sklearn
 
 
-Model = joblib.load('Data/Final_Model.pkl')
-Inputs_dict = joblib.load("Data/Inputs_dict.pkl")
+Model = joblib.load('Final_Model.pkl')
+Inputs_dict = joblib.load("Inputs_dict.pkl")
 
 def Predict(Airline, Source, Destination, Route, Duration, Journey_Day, Journey_Month):
     df_test = pd.DataFrame(columns=Inputs_dict['inputs'])
