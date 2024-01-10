@@ -5,6 +5,7 @@ import numpy as np
 import streamlit as st
 import category_encoders
 import sklearn
+import xgboost
 
 
 Model = joblib.load('Final_Model.pkl')
